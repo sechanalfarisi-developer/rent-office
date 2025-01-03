@@ -33,7 +33,7 @@ class BookingTransaction extends Model
         return $randomString;
     }
     
-    public function officeSpaces(): BelongsTo
+    public function officeSpace(): BelongsTo
     {
         return $this->belongsTo(OfficeSpace::class, 'office_space_id');
     }
